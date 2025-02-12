@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Cheikh WEBSITE</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cheikh GUEYE - Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    /* Police modernes */
+    @import url('https://fonts.googleapis.com/css2?family=Fira+Code&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Latin+Modern+Roman&display=swap');
+
+    /* Styles de base */
+    body {
+      font-family: 'Latin Modern Roman', serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+      color: #e0e0e0;
+      background-image: url('https://cdn.pixabay.com/photo/2020/08/08/02/56/hacker-5471975_1280.png');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    /* En-tête */
+    header {
+      background-color: rgba(44, 62, 80, 0.9);
+      color: #fff;
+      padding: 40px 0;
+      text-align: center;
+      backdrop-filter: blur(10px);
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin: 0;
+      animation: fadeInDown 1s ease-in-out;
+    }
+
+    header h2 {
+      font-size: 1.5rem;
+      margin: 10px 0;
+      animation: fadeInDown 1.2s ease-in-out;
+    }
+
+    header p {
+      font-size: 1rem;
+      margin: 5px 0;
+      animation: fadeInDown 1.4s ease-in-out;
+    }
+
+    header a {
+      color: #fff;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    header a:hover {
+      color: #e74c3c;
+    }
+
+    .profile-photo {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      margin-top: 20px;
+      border: 4px solid #fff;
+      animation: fadeInUp 1.6s ease-in-out;
+      transition: transform 0.3s ease;
+    }
+
+    .profile-photo:hover {
+      transform: scale(1.1);
+    }
+
+    /* Barre de navigation */
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 20px 0;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      position: relative;
+      padding: 5px 10px;
+      transition: color 0.3s ease, background-color 0.3s ease;
+    }
+
+    nav ul li a i {
+      margin-right: 8px;
+
+      nav ul li a::after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        background-color: #e74c3c;
+        bottom: -5px;
+        left: 0;
+        transform: scaleX(0);
+        transition: transform 0.3s ease;
+      }
+
+      nav ul li a:hover::after {
+        transform: scaleX(1);
+      }
+
+      nav ul li a.active {
+        color: #e74c3c;
+      }
+  </style>
+</head>
+
+<body>
+  <div class="menu-toggle">
+    <div class="bar1"></div>
+    <div class="bar2"></div>
+    <div class="bar3"></div>
+  </div>
+
+  <div class="side-menu">
+    <a href="#profile" class="side-menu-link"><i class="fas fa-user"></i> Profil</a>
+    <a href="#experience" class="side-menu-link"><i class="fas fa-briefcase"></i> Expérience</a>
+    <a href="#education" class="side-menu-link"><i class="fas fa-graduation-cap"></i> Formation</a>
+    <a href="#certifications" class="side-menu-link"><i class="fas fa-certificate"></i> Certifications</a>
+    <a href="#distinctions" class="side-menu-link"><i class="fas fa-trophy"></i> Distinctions</a>
+    <a href="#demonstrations-techniques" class="side-menu-link"><i class="fas fa-video"></i> Démonstrations Tech</a>
+    <a href="#gallery-stats" class="side-menu-link"><i class="fas fa-images"></i> Gallery Stats</a>
+    <a href="#skills" class="side-menu-link"><i class="fas fa-wrench"></i> Compétences</a>
+    <a href="#references" class="side-menu-link"><i class="fas fa-address-book"></i> Références</a>
+  </div>
+  <header class="header">
+    <div class="container">
+      <h1>Cheikh GUEYE</h1>
+      <h2>Data Analyst / Data Scientist</h2>
+      <p>
+        <i class="fas fa-home"></i> Rambouillet 78120
+        <span class="hfill"></span>&nbsp;&nbsp;&nbsp;
+        <i class="fas fa-phone"></i> 07 68 81 80 90
+        <span class="hfill"></span>&nbsp;&nbsp;&nbsp;
+        <i class="fas fa-envelope"></i> <a href="mailto:Cheikhgueye96@yahoo.com">Cheikhgueye96@yahoo.com</a>
+        <span class="hfill"></span>&nbsp;&nbsp;&nbsp;
+        <a href="https://github.com/MaM-PathE" target="_blank" style="text-decoration:none; color:white;">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Octicons-mark-github.svg/24px-Octicons-mark-github.svg.png" alt="GitHub Logo" class="github-logo" style="width:20px; height:20px; vertical-align:middle; margin-right:5px;">
+        </a>
+
+        </a>
+      </p>
+      <img src="https://i.postimg.cc/3JJdBp6w/image.jpg" alt="Photo de profil de Cheikh GUEYE" class="profile-photo">
+      <nav>
+        <ul>
+          <li><a href="#profile" class="nav-link active"><i class="fas fa-user"></i> Profil</a></li>
+          <li><a href="#experience" class="nav-link"><i class="fas fa-briefcase"></i> Expérience</a></li>
+          <li><a href="#education" class="nav-link"><i class="fas fa-graduation-cap"></i> Formation</a></li>
+          <li><a href="#certifications" class="nav-link"><i class="fas fa-certificate"></i> Certifications</a></li>
+          <li><a href="#distinctions" class="nav-link"><i class="fas fa-trophy"></i> Distinctions</a></li>
+          <li><a href="#gallery" class="nav-link"><i class="fas fa-images"></i> Gallery</a></li>
+          <li><a href="#videos" class="nav-link"><i class="fas fa-video"></i> Videos</a></li>
+          <li><a href="#skills" class="nav-link"><i class="fas fa-wrench"></i> Compétences</a></li>
+          <li><a href="#references" class="nav-link"><i class="fas fa-address-book"></i> Références</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <!-- Section Profil -->
+    <section id="profile" class="section active">
+      <div class="container">
+        <h2><i class="fas fa-user"></i> Profil</h2>
+        <p id="typed-text"></p>
+      </div>
+    </section>
+    <!-- Section Expérience Professionnelle -->
+    <section id="experience" class="section">
+      <div class="container">
+        <h2><i class="fas fa-briefcase"></i> Expérience Professionnelle</h2>
+        <div class="experience-item">
+          <h3>Data Scientist / Analyst (CDD)</h3>
+          <p>
+            <i>Crédit Agricole Assurances, Paris 75015</i>
+            <span class="hfill"></span>
+            Depuis 02/2024
+          </p>
+          <ul>
+            <li>Conception et exécution d'analyses avancées sur des datasets massifs via BigQuery avec des requêtes sous SQL.</li>
+            <li>Développement, tests et validation de modèles de machine learning (Logistique, XGBoost, Random Forest).</li>
+            <li>Création de dashboards interactifs avec Power BI pour une visualisation dynamique et automatisée.</li>
+            <li>Coordination des réunions techniques et gestion des projets.</li>
+            <li>Production de rapports détaillés et présentations pour communiquer les résultats des analyses.</li>
+            <li><strong>Réalisations clés :</strong>
+              <ul>
+                <li>Prévision de la répartition des besoins en logements chez le grand âge en France et toute la zone Européenne.</li>
+                <li>Lissage des résultats au niveau des départements, communes et communautés de communes Françaises.</li>
+                <li>Analyse très approfondie de la distribution des personnes dépendantes dans les divers types d'habitations.</li>
+                <li>Encadrement de stagiaires sur leurs projets avec un focus sur l'utilisation de SQL pour des requêtes, Power BI pour du Dashboarding et Python pour la modélisation dans un environnement d'entreprise.</li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div class="experience-item">
+          <h3>Data Analyst (CDD)</h3>
+          <p>
+            <i>Institut Louis Bachelier, Chaire Transition Démographique, Transition Économique, Paris 75002</i>
+            <span class="hfill"></span>
+            07/2023 – 02/2024
+          </p>
+          <ul>
+            <li>Gestion et analyse de bases de données démographiques.</li>
+            <li>Modélisation et développement de modèles ML pour simuler les impacts des politiques de retraite.</li>
+            <li>Création de tableaux de bord interactifs pour présenter les résultats aux équipes sur le projet.</li>
+            <li>Rédaction de rapports techniques et articles de recherche pour partager les conclusions des analyses.</li>
+            <li><strong>Réalisations clés :</strong>
+              <ul>
+                <li>Consultant pour <i>la Mutuelle Générale et la poste</i> : identification et définition des profils types d’aidants.</li>
+                <li>Mise en place d'une base de données géante sur l'aidance mise à jour selon l'évolution de l'enquête en t.</li>
+                <li>Cartographie des variations démographiques liées au sujet de l'aidance dans différentes régions françaises.</li>
+                <li>Collaboration avec des experts pour améliorer les méthodes de collecte de données pour enrichir l'enquête.</li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div class="experience-item">
+          <h3>Data Analyst (Stage)</h3>
+          <p>
+            <i>Institut Louis Bachelier, Chaire Transition Démographique, Transition Économique, Paris 75002</i>
+            <span class="hfill"></span>
+            02/2023 – 07/2023
+          </p>
+          <ul>
+            <li>Nettoyage et transformation des données des enquêtes SHARE et CARE, avec un suivi complet de l’ensemble du processus ETL, afin de modéliser de manière approfondie les facteurs d’entrée en dépendance.</li>
+            <li>Analyse des données démographiques et sanitaires afin d’identifier les tendances clés.</li>
+            <li>Création de dashboards interactifs avec Power BI pour visualiser les données transformées et faciliter l'analyse.</li>
+            <li>Simulation de politiques publiques en utilisant des modèles de générations imbriquées créés à la chaire TDTE.</li>
+          </ul>
+        </div>
+        <div class="experience-item">
+          <h3>Data Research Analyst (Freelance)</h3>
+          <p>
+            <i>Cercle des Jeunes Économistes, Angers 49000</i>
+            <span class="hfill"></span>
+            Depuis 09/2022
+          </p>
+          <ul>
+            <li>Analyse de données environnementales pour soutenir des projets de transition énergétique.</li>
+            <li>Présentation des études et résultats à des partenaires institutionnels pour obtenir des financements.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="education" class="section">
+      <div class="container">
+        <h2><i class="fas fa-graduation-cap"></i> Formations</h2>
+        <div class="education-item">
+          <h3>Master I & II Ingénierie de Données et Evaluations Econométriques</h3>
+          <p>
+            <i>Université d'Angers</i>
+            <span class="date">2021 - 2023</span>
+          </p>
+        </div>
+        <div class="education-item">
+          <h3>Maîtrise Sciences Actuarielles</h3>
+          <p>
+            <i>Université de Montpellier</i>
+            <span class="date">2020 - 2021</span>
+          </p>
+        </div>
+        <div class="education-item">
+          <h3>Licence Quantitative Analyse et Politiques Economiques</h3>
+          <p>
+            <i>Université Clermont Auvergne</i>
+            <span class="date">2018 - 2020</span>
+          </p>
+        </div>
+      </div>
+    </section>
+    </section>
+
+    <!-- Section Certifications -->
+    <section id="certifications" class="section">
+      <div class="container">
+        <h2><i class="fas fa-certificate"></i> Certifications</h2>
+        <div class="certification-item">
+          <h3>Google Cloud Professional Cloud Developer Certification</h3>
+          <p>
+            <i>UDEMY</i>
+            <span class="hfill"></span>
+            11/2024
+          </p>
+        </div>
+        <div class="certification-item">
+          <h3>Maîtriser Power BI de A à Z : Formation complète pour tous</h3>
+          <p>
+            <i>UDEMY</i>
+            <span class="hfill"></span>
+            02/2024
+          </p>
+        </div>
+        <div class="certification-item">
+          <h3>Devenir un expert du SQL - Le cours Complet</h3>
+          <p>
+            <i>UDEMY</i>
+            <span class="hfill"></span>
+            01/2023
+          </p>
+        </div>
+        <div class="certification-item">
+          <h3>Excel : la formation complète - maîtriser Excel de A à Z</h3>
+          <p>
+            <i>UDEMY</i>
+            <span class="hfill"></span>
+            09/2022
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section Distinctions -->
+    <section id="distinctions" class="section">
+      <div class="container">
+        <h2><i class="fas fa-trophy"></i> Distinctions</h2>
+        <div class="distinction-item">
+          <h3>Lauréat au prix Yves Journel de la fondation DOMUS-VI, Meilleur Mémoire, <i>Paris</i> </h3>
+          <p>
+
+            <span class="hfill"></span>
+            12/2023
+          </p>
+          <div class="gallery" style="margin-top: 15px; display: flex; justify-content: space-between; align-items: center;">
+            <img src="https://th.bing.com/th/id/OIP.q3I0ZTrTXi511fQN8q3HaQAAAA?rs=1&pid=ImgDetMain" alt="Prix Yves Journel" style="max-width: 200px;">
+            <img src="https://www.fondation-domusvi.com/wp-content/uploads/2019/06/domusvi_fondation.png" alt="Fondation DomusVi" style="max-width: 200px;">
+          </div>
+        </div>
+        <div class="distinction-item">
+          <h3>Lauréat au Math-LET, Concours de Mathématique au niveau national pour les Lycéens, <i>Dakar</i></h3>
+          <p>
+
+            <span class="hfill"></span>
+            02/2014
+          </p>
+        </div>
+      </div>
+    </section>
+
+    </section>
+
+    <!-- Section Démonstrations Techniques -->
+    <section id="demonstrations-techniques" class="section">
+      <div class="container">
+        <h2><i class="fas fa-video"></i> Démonstrations Techniques</h2>
+
+        <div class="video-container">
+          <h3>🧐 SQL : Le langage des data nerds !</h3>
+          <iframe width="560" height="315" data-src="https://files.catbox.moe/ud4sel.mp4" title="Catbox Video 1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+
+        <div class="video-container">
+          <h3>🐍 SQL + Python = Duo de choc !</h3>
+          <iframe width="560" height="315" data-src="https://files.catbox.moe/6608et.mp4" title="Catbox Video 2" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+
+        <div class="video-container">
+          <h3>🎨💻 CSS, JavaScript & HTML : Art ou Code ?</h3>
+          <iframe width="560" height="315" data-src="https://files.catbox.moe/8ho4ar.mp4" title="Catbox Video 3" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section Gallery Stats -->
+    <section id="gallery-stats" class="section">
+      <div class="container">
+        <h2><i class="fas fa-images"></i> Gallery Stats</h2>
+        <div class="gallery">
+          <!-- Contenu gallery inchangé -->
+          <img src="https://i.postimg.cc/wjDjYtcB/Figure-2024-09-24-160439-0.png" alt="Description de la photo 1">
+          <img src="https://i.postimg.cc/43ZNfJBQ/Figure-2024-09-24-160439-1.png" alt="Description de la photo 2">
+          <img src="https://i.postimg.cc/Pq4fNB7s/Figure-2024-09-24-160439-2.png" alt="Description de la photo 3">
+          <img src="https://i.postimg.cc/FRC9V0mT/Figure-2024-09-24-160439-3.png" alt="Description de la photo 4">
+          <img src="https://i.postimg.cc/MTp6B9kc/Figure-2024-09-24-160439-4.png" alt="Description de la photo 5">
+          <img src="https://i.postimg.cc/tJ19S74p/Figure-2024-09-24-160439-5.png" alt="Description de la photo 6">
+          <img src="https://i.postimg.cc/vTpbpM49/Figure-2024-09-26-135824.png" alt="Description de la photo 7">
+          <img src="https://i.postimg.cc/jS6tkptw/Figure-2024-09-27-022418.png" alt="Description de la photo 8">
+          <img src="https://i.postimg.cc/FK9NtTHP/Figure-2024-09-27-145016-1.png" alt="Description de la photo 9">
+          <img src="https://i.postimg.cc/fWFz378L/Figure-2024-09-27-145016-3.png" alt="Description de la photo 10">
+          <img src="https://i.postimg.cc/XvQ3n9Zn/Figure-2024-09-27-145016-4.png" alt="Description de la photo 11">
+          <img src="https://i.postimg.cc/8P61LFYb/Figure-2024-10-10-005520.png" alt="Description de la photo 12">
+          <img src="https://i.postimg.cc/131yBmh1/Figure-2024-10-10-005531.png" alt="Description de la photo 13">
+          <img src="https://i.postimg.cc/mDk4khMC/Figure-2024-10-10-193214.png" alt="Description de la photo 14">
+          <img src="https://i.postimg.cc/jdDj55VX/ARIMA.jpg" alt="Description de la photo 15">
+          <img src="https://i.postimg.cc/X7tYyb40/CO2.jpg" alt="Description de la photo 16">
+          <img src="https://i.postimg.cc/RZfV7DZJ/Figure-2024-09-27-145016-2.png" alt="Description de la photo 17">
+          <img src="https://i.postimg.cc/XvkjhBFV/Headmap.jpg" alt="Description de la photo 18">
+          <img src="https://i.postimg.cc/s2rfw4M6/Pr-vision-Xg-Boost.jpg" alt="Description de la photo 19">
+          <img src="https://i.postimg.cc/G23L13Jv/Time-series.jpg" alt="Description de la photo 20">
+          <img src="https://i.postimg.cc/tgwKBXvX/A-Figure-2024-12-23-165833.png" alt="Description de la photo 21">
+          <img src="https://i.postimg.cc/W14xjDQN/C-Figure-2024-12-22-162658-439.png" alt="Description de la photo 22">
+          <img src="https://i.postimg.cc/sx9bf5jX/D-Figure-2024-12-23-161311.png" alt="Description de la photo 23">
+          <img src="https://i.postimg.cc/LXPr7rGj/E-Figure-2024-12-22-162658-430.png" alt="Description de la photo 24">
+          <img src="https://i.postimg.cc/cCNVNFN2/Figure-2024-10-10-005437.png" alt="Description de la photo 25">
+          <img src="https://i.postimg.cc/QNp2qZQ3/Figure-2024-10-10-005459.png" alt="Description de la photo 26">
+          <img src="https://i.postimg.cc/PrTB3Vy8/Figure-2024-12-22-162658-332.png" alt="Description de la photo 27">
+          <img src="https://i.postimg.cc/7Y9jp1tt/Figure-2024-12-22-162658-346.png" alt="Description de la photo 28">
+        </div>
+      </div>
+    </section>
+
+    </section>
+
+    <!-- Section Compétences -->
+    <section id="skills" class="section">
+      <div class="container">
+        <h2><i class="fas fa-wrench"></i> Compétences</h2>
+        <div class="skills-circle" id="skillsCircle"></div>
+        <ul>
+          <li>Langues : Français (Maternelle), Anglais (C2 - Bilingue), Turc (A2 - Notions)</li>
+          <li>Intérêts : Lecture, Football, Recherche scientifique</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Section Références -->
+    <section id="references" class="section">
+      <div class="container">
+        <h2><i class="fas fa-address-book"></i> Références</h2>
+        <div class="reference-item">
+          <h3>Jean-François DIAMÉ</h3>
+          <p>Data Scientist | NLP | GoogleCloudCertified P. Machine Learning and P. Data Engineer (2x)</p>
+          <p><i class="fas fa-phone"></i> 07 52 29 36 59</p>
+        </div>
+        <div class="reference-item">
+          <h3>Samba Sawane</h3>
+          <p>Data Scientist, Institut Louis Bachelier</p>
+          <p><i class="fas fa-envelope"></i> <a href="mailto:samba.sawane@hotmail.fr">samba.sawane@hotmail.fr</a></p>
+          <p><i class="fas fa-phone"></i> 07 67 68 48 01</p>
+        </div>
+        <div class="reference-item">
+          <h3>Djenabou Diallo</h3>
+          <p>Chef de Projet BI, TGS France</p>
+          <p><i class="fas fa-envelope"></i> <a href="mailto:djenaboudiallo1188@gmail.com">djenaboudiallo1188@gmail.com</a></p>
+          <p><i class="fas fa-phone"></i> 07 53 16 39 36</p>
+        </div>
+        <div class="reference-item">
+          <h3>Mohamed Lemine Diakhite</h3>
+          <p>Développeur Full Stack, Capgemini</p>
+          <p><i class="fas fa-envelope"></i> <a href="mailto:Diakhite.lemine@gmail.com">Diakhite.lemine@gmail.com</a></p>
+          <p><i class="fas fa-phone"></i> 07 68 41 24 46</p>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="container">
+      <p>© 2024 Cheikh GUEYE. Tous droits réservés.</p>
+    </div>
+  </footer>
+  <script>
+    // JavaScript pour gérer l'affichage des sections
+    document.querySelectorAll('.nav-link').forEach((link) => {
+      link.addEventListener('click', function(e) {
+        e.preventDefault();
+        document.querySelectorAll('.section').forEach((section) => {
+          section.classList.remove('active');
+        });
+        const targetId = this.getAttribute('href');
+        document.querySelector(targetId).classList.add('active');
+        document.querySelectorAll('.nav-link').forEach((navLink) => {
+          navLink.classList.remove('active');
+        });
+        this.classList.add('active');
+      });
+    });
+  </script>
+</body>
+
+</html>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
